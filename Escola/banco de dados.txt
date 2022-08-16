@@ -1,0 +1,54 @@
+banco chamado escola
+create table alunos (
+id_aluno int not null AUTO_INCREMENT PRIMARY KEY,
+nome_aluno varchar(255) not null,
+email varchar(255) not null,
+data_nascimento date NOT null
+);
+
+CREATE table cursos (
+id_curso int not null AUTO_INCREMENT PRIMARY key,
+nome_curso varchar(255) not null,
+carga_horaria int not null
+);
+
+create table usuarios(
+id_usuario int NOT null AUTO_INCREMENT PRIMARY key,
+nome_usuario varchar(255) not null,
+usuario varchar(30) not null UNIQUE KEY,
+senha varchar(50) not null
+);
+create table matriculas (
+id_matricula int not null AUTO_INCREMENT PRIMARY KEY,
+id_aluno int not null,
+id_curso int not null
+);
+
+
+
+
+criar 6 cursos e 8 registros de alunos
+
+
+INSERT INTO `alunos` (`nome_aluno`,`email`,`data_nascimento`)
+VALUES
+  ("Justin Maciel","aenean@live.net","2022-12-25"),
+  ("Imelda Guimaraes","id@hotmail.net","2022-01-23"),
+  ("Fiona Evangelista","lacinia@live.com","2022-09-21"),
+  ("Iris Ferraz","augue@live.net","2023-06-19"),
+  ("Carlos Pacheco","eu.turpis.nulla@live.com","2022-03-15"),
+  ("Ciaran Neves","nisi.dictum@hotmail.net","2022-04-22"),
+  ("Margaret de Morais","luctus.et@google.com","2022-12-11"),
+  ("Illiana Feitosa","erat@email.com","2021-11-02");
+
+
+INSERT INTO `cursos` (`nome_curso`,`carga_horaria`)
+VALUES
+  ("Python",120),
+  ("Java",80),
+  ("Wordpress",70),
+  ("Php",140),
+  ("JavaScript",60),
+  ("Banco de dados",40);
+
+

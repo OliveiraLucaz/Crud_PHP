@@ -1,0 +1,30 @@
+.minha_margem{
+    margin: 0px 10px;
+}
+.estilizacao{
+font-size: 18px;
+display: flex;
+align-items: center;
+}
+.estilizacao b{
+    font-size: 25px;
+    padding: 3px;
+}
+body{
+    background-image: url(../imagens/blurry-gradient-haikei.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.horario{
+    text-align: center;
+    margin-right: 100px;
+}
+.botao_logout{
+    color: #fff;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+
