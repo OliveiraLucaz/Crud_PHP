@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Alterando senha do usuário <?php echo $_SESSION['usuario']; ?>:</h1>
 </div>
-<div class="container">
+ <div class="container"><!-- formulário para alterar a senha -->
   <form method="POST" action="bd/alter_senha.php">
     <input type="hidden" name="nome_usuario" value="<?php echo $_SESSION['usuario'] ?>">
 
